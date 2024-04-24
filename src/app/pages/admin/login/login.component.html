@@ -21,17 +21,17 @@
                 <p class="desc">Login to your account to upload or download pictures,videos or music</p>
                 <div class="input-container">
                     <i class="fas fa-user icon"></i><br>
-                    <input type="text" name="" [(ngModel)]="loginObj.userName"placeholder="username" autofocus = "on">
+                    <input type="text" name="username" [(ngModel)]="loginObj.userName"placeholder="username" autofocus = "on">
                     
                 </div>
                 <div class="input-container">
                     <i class="fas fa-lock icon"></i><br>
-                    <input type="password" [(ngModel)]="loginObj.password"placeholder="Enter password" autofocus = "on">
+                    <input type="password" name="password"[(ngModel)]="loginObj.password"placeholder="Enter password" autofocus = "on">
                     
                 </div>
                 <div class="account-controls">
                     <a href="">Forgot Password?</a>
-                    <button>Next <i class="fas fa-solid fa-angle-right"></i></button>
+                    <button type="button" (click)="onLogin()">Login<i class="fas fa-solid fa-angle-right"></i></button>
                 </div>
     
                 <span class="line"></span>
