@@ -53,7 +53,7 @@ export class ProductsComponent implements OnInit {
     this.productSrv.updateProduct(this.productObj).subscribe((res:any)=>{
       debugger;
       if(res.result){
-        alert("Product Created!!");
+        alert("Product Updated!!");
         this.getProducts();
       }
       else{
